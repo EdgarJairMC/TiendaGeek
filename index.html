@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/cabecera.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/tienda/productos.css">
+    <link rel="stylesheet" href="assets/css/rodapie/rodapie.css">
+    <link rel="stylesheet" href="assets/css/login/login.css">
+</head>
+<body>
+    <header>
+      <img src="assets/images/Logo.png" alt="Logo Alura Geek" class="logo">
+      <div class="search">
+        <input type="text" class="barra" placeholder="¿Qué deseas buscar?">
+        <button class="search__icon" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+              <path d="M15.5 14.5H14.71L14.43 14.23C15.63 12.83 16.25 10.92 15.91 8.89C15.44 6.11 13.12 3.89 10.32 3.55C6.09001 3.03 2.53002 6.59 3.05002 10.82C3.39002 13.62 5.61002 15.94 8.39002 16.41C10.42 16.75 12.33 16.13 13.73 14.93L14 15.21V16L18.25 20.25C18.66 20.66 19.33 20.66 19.74 20.25C20.15 19.84 20.15 19.17 19.74 18.76L15.5 14.5ZM9.50002 14.5C7.01002 14.5 5.00002 12.49 5.00002 10C5.00002 7.51 7.01002 5.5 9.50002 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.50002 14.5Z" fill="#A2A2A2"/>
+          </svg>
+        </button>
+      </div>
+      <button class="login__button" onclick="document.getElementById('id01').style.display='flex'">Login</button>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="content__banner">
+          <h1 class="title__banner">Febrero Promocional</h1>
+          <h2 class="description__banner">Productos seleccionados con 33% de descuento</h2>
+          <button class="banner__button">Ver Consolas</button>
+        </div>
+      </section>
+      <section id="id01" class="modal__login" style="display: none;">
+        <div class="modal__container">
+    
+          <div class="header__login"><br>
+            <span>Iniciar Sesion</span>
+         </div>
+    
+          <form class="main__login" action="/action_page.php">
+            <ul class="formulario__login">
+              <li class="input-group-login">
+                <label for="name" class="input-group-login__label">Ususario</label>
+                  <input
+                      type="username"
+                      name="usrname"
+                      placeholder="Escriba su usuario"
+                      class="input-group-login__input"
+                      required
+                  />
+              </li>
+              <li class="input-group-login">
+                <label for="message" class="input-group-login__label">Contraseña</label>
+                  <input
+                      name="psw"
+                      type="password"
+                      placeholder="Escriba su contraseña"
+                      class="input-group-login__input"
+                      required
+                  ></input>
+              </li>  
+            </ul>
+            <ul class="footer__login">
+              <li><button onclick="document.getElementById('id01').style.display='none'" type="button" class="cancel__button">Cancel</button></li>
+              <li><button class="enter__button">Entrar</button></li>
+            </ul>
+            </div>
+        </form>
+        </div>
+      </section>
+      <section class="tienda">
+        <div class="productos starWars">
+          <div class="productos__Cabecera">
+            <p>Star Wars</p>
+            <a href="#" >Ver todo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_1_67)">
+                <path d="M3.99976 13L16.1698 13L10.5798 18.59L11.9998 20L19.9998 12L11.9998 4L10.5898 5.41L16.1698 11L3.99976 11L3.99976 13Z" fill="#2A7AE4"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_67">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg></a>
+          
+          </div>
+          <ul class="listaProductos">
+            <li class="imgProducto">
+              <img src="assets/images/starwars1.png" alt="Starwars1">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/starwars2.png" alt="starwars2">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/starwars3.png" alt="starwars3">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/starwars4.png" alt="starwars4">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/starwars5.png" alt="starwars5">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/starwars6.png" alt="">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="productos consolas">
+          <div class="productos__Cabecera">
+            <p>Consolas</p>
+            <a href="#" >Ver todo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_1_67)">
+                <path d="M3.99976 13L16.1698 13L10.5798 18.59L11.9998 20L19.9998 12L11.9998 4L10.5898 5.41L16.1698 11L3.99976 11L3.99976 13Z" fill="#2A7AE4"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_67">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg></a>
+          
+          </div>
+          <ul class="listaProductos">
+            <li class="imgProducto">
+              <img src="assets/images/consolas1.png" alt="consolas1">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/consolas2.png" alt="consolas2">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/consolas3.png" alt="consolas3">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/consolas4.png" alt="consolas4">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/consolas5.png" alt="consolas5">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/consolas6.png" alt="consolas6">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="productos diversos">
+          <div class="productos__Cabecera">
+            <p>Diversos</p>
+            <a href="#" >Ver todo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_1_67)">
+                <path d="M3.99976 13L16.1698 13L10.5798 18.59L11.9998 20L19.9998 12L11.9998 4L10.5898 5.41L16.1698 11L3.99976 11L3.99976 13Z" fill="#2A7AE4"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_67">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg></a>
+          
+          </div>
+          <ul class="listaProductos">
+            <li class="imgProducto">
+              <img src="assets/images/diversos1.png" alt="diversos1">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/diversos2.png" alt="diversos2">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/diversos3.png" alt="diversos3">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/diversos4.png" alt="diversos4">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/diversos5.png" alt="diversos5">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+            <li class="imgProducto">
+              <img src="assets/images/diversos6.png" alt="diversos6">
+              <p class="product__name">Producto XYZ</p>
+              <p class="product__price">$60.00</p>
+              <a href="#">Ver producto</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="nosotros">
+        <div class="content__footer">
+          <img class="logo__footer" src="assets/images/Logo.png" alt="Logo AluraGeek">
+          <ul class="enlaces">
+            <li>Quines somos</li>
+            <li>Politica de privacidad</li>
+            <li>Programa de fidelidad</li>
+            <li>Nuestras Tiendas</li>
+            <li>Quiero ser franquiciado</li>
+            <li>Anuncie aqui</li>
+          </ul>
+          <ul class="formulario">
+            <li><p>Hable sobre nosotros</p></li>
+            <li class="input-group">
+              <label for="name" class="input-group__label">Nombre</label>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Escriba su nombre"
+                    class="input-group__input"
+                />
+            </li>
+            <li class="input-group">
+              <label for="message" class="input-group__label">Mensaje</label>
+                <textarea
+                    name="message"
+                    type="text"
+                    placeholder="Escriba su mensaje"
+                    class="input-group__input"
+                ></textarea>
+            </li>
+            <li class="button__formulario"><button class="enviarMensaje">Enviar mensaje</button></li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer">
+        <h4 class="footer__credit">Desarrollado por Edgar-Mtz</h4>
+        <p class="footer__year">2023</p>
+    </footer>
+    </main>
+</body>
+</html>
