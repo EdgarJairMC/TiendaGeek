@@ -86,3 +86,20 @@
     color: white;
     cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+    .content__footer{
+        padding: 32px;
+        height: 300px;
+        flex-wrap: wrap;     
+    }
+    .formulario{
+        padding: 0;
+        width: 72%;
+    }
+    .enlaces{
+        align-items: flex-start;
+    }
+    .mensaje{
+        height: 70px;
+    }
+}

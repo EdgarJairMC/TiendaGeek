@@ -32,3 +32,31 @@
     font-weight: 600;
     border: none;
 }
+@media screen and (min-width: 768px) {
+    .banner{
+        height: 352px;
+        background-size: 120%;
+        display: flex;
+        padding: 32px;
+        gap: 16px;
+    }
+    .title__banner{
+        font-size: 52px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .description__banner{
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .content__banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+        gap: 16px;
+    }    
+}

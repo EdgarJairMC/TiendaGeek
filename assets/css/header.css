@@ -10,10 +10,12 @@ header{
 }
 .barra{
     display: none;
+    border: none;
+    background: var(--preto-05, #F5F5F5);
 }
 .logo{
     max-width: 100px;
-    max-height: 28px;
+    max-height: 29px;
 }
 .login__button{
     display: flex;
@@ -31,4 +33,32 @@ header{
 .search__icon{
     border: none;
     background: var(--preto-branco, #FFF);
+}
+@media screen and (min-width: 768px) {
+    .barra{
+        display: initial;
+    }
+    .search{
+        order: initial;
+        border-radius: 20px;
+        background: var(--preto-05, #F5F5F5);
+        display: flex;
+        width: 272px;
+        padding: 8px 16px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        margin-right: auto;
+    }
+    header{
+        padding: 16px 32px;
+        justify-content: initial;
+    }
+    .search__icon{
+        border: none;
+        background: var(--preto-05, #F5F5F5);
+    }
+    .logo{
+        margin-right: 32px;
+    }
 }
