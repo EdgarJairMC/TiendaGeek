@@ -62,3 +62,14 @@ header{
         margin-right: 32px;
     }
 }
+@media screen and (min-width: 1044px) {
+    header{
+        max-width: 71rem;
+        margin: auto;
+        padding: 2rem 0rem;
+    }
+    .logo{
+        max-width: 11rem;
+        max-height: 3.13rem;
+    }
+}

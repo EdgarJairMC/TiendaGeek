@@ -6,6 +6,8 @@
     align-items: center;
     gap: 16px;
     align-self: stretch;
+}
+.nosotros{
     background: var(--azul-10, #EAF2FD);
 }
 .nosotros li{
@@ -90,16 +92,40 @@
     .content__footer{
         padding: 32px;
         height: 300px;
-        flex-wrap: wrap;     
+        flex-wrap: wrap;
+        max-width: 44rem;     
     }
     .formulario{
         padding: 0;
-        width: 72%;
+        max-width: 27.1rem;
     }
     .enlaces{
         align-items: flex-start;
     }
     .mensaje{
         height: 70px;
+    }
+    .input-group{
+        max-width: 27.1rem;
+    }
+}
+@media screen and (min-width: 1044px) {
+    .content__footer{
+        height: 15rem;
+        justify-content: space-between;
+        padding: 4rem;
+        max-width: 71rem;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 7rem;
+    }
+    .enlaces{
+        gap:1.5rem
+    }
+    .formulario{
+        max-width: 35rem;
+    }
+    .input-group{
+        max-width: 35rem;
     }
 }

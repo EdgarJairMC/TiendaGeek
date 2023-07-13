@@ -69,3 +69,17 @@
     .tienda{
         padding: 32px;}
 }
+
+@media screen and (min-width: 1044px) {
+    .listaProductos li:nth-last-child(-n+2) {
+        display: initial; 
+    }
+    .tienda{
+        max-width: 71rem;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 4rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}

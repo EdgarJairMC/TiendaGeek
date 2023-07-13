@@ -60,3 +60,13 @@
         gap: 16px;
     }    
 }
+@media screen and (min-width: 1044px) {
+    .content__banner{
+        width: 71rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner{
+        max-height: 22rem;
+    }
+}
