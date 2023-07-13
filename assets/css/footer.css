@@ -122,10 +122,4 @@
     .enlaces{
         gap:1.5rem
     }
-    .formulario{
-        max-width: 35rem;
-    }
-    .input-group{
-        max-width: 35rem;
-    }
 }
