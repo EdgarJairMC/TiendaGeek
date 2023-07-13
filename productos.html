@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek</title>
+    <title>AluraGeek-Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/admin/tienda.css">
     <link rel="stylesheet" href="assets/css/body.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/admin/ad-product.css">
   </head>
 <body>
     <header>
@@ -30,9 +31,65 @@
       <section class="tienda">
           <div class="header-tienda">  
             <p class="title-admin">Todos los productos</p>
-            <button class="agregar-producto">Agregar producto
+            <button class="agregar-producto" onclick="document.getElementById('id02').style.display='flex'">Agregar producto
             </button>
           </div>
+          <section id="id02" class="modal-product" style="display: none;">
+            <ul class="formulario-ad-product">
+              <li><h1 class="ad-product__title">Agregar nuevo producto</h1></li>
+              <li class="ad-product-group">
+                <label for="url" class="ad-product-group__label">Nombre</label>
+                  <input
+                      type="url"
+                      name="url"
+                      placeholder="Url de la imagen"
+                      class="input-url"
+                  />
+              </li>
+              <li class="ad-product-group">
+                <label for="categoria" class="ad-product-group__label">Categoria</label>
+                  <input
+                      type="text"
+                      name="categoria"
+                      placeholder="Ejemplo: Consolas"
+                      class="input-categoria"
+                  />
+              </li>
+              <li class="ad-product-group">
+                <label for="product-name" class="ad-product-group__label">Nombre del producto</label>
+                  <input
+                      type="text"
+                      name="product-name"
+                      placeholder="Ejemplo: Producto XYZ"
+                      class="input-name-product"
+                  />
+              </li>
+              <li class="ad-product-group">
+                <label for="product-price" class="ad-product-group__label">Precio del producto</label>
+                  <input
+                      type="number"
+                      name="product-price"
+                      placeholder="Ejemplo: $60.00"
+                      class="input-price"
+                  />
+              </li>
+              <li class="ad-product-group">
+                <label for="product-description" class="ad-product-group__label">Descripcion del producto</label>
+                  <input
+                      type="text"
+                      name="product-description"
+                      placeholder=""
+                      class="input-description"
+                  />
+              </li>
+              <li class="button__formulario">
+                <button class="ad-product__button">Agregar Producto
+                </button>
+                <button class="cancel-product__button" onclick="document.getElementById('id02').style.display='none'">Cancelar
+                </button>
+              </li>
+            </ul>
+          </section>
           <ul class="listaProductos">
             <li class="imgProducto">
               <img src="assets/images/starwars1.png" alt="Starwars1">
