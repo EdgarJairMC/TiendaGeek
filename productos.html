@@ -34,15 +34,15 @@
             <button class="agregar-producto" onclick="document.getElementById('id02').style.display='flex'">Agregar producto
             </button>
           </div>
-          <section id="id02" class="modal-product" style="display: none;">
+          <form id="id02" class="modal-product" style="display: none;">
             <ul class="formulario-ad-product">
               <li><h1 class="ad-product__title">Agregar nuevo producto</h1></li>
               <li class="ad-product-group">
-                <label for="url" class="ad-product-group__label">Nombre</label>
+                <label for="url" class="ad-product-group__label">URL de la imagen</label>
                   <input
                       type="url"
                       name="url"
-                      placeholder="Url de la imagen"
+                      placeholder=""
                       class="input-url"
                   />
               </li>
@@ -74,22 +74,17 @@
                   />
               </li>
               <li class="ad-product-group">
-                <label for="product-description" class="ad-product-group__label">Descripcion del producto</label>
-                  <input
-                      type="text"
-                      name="product-description"
-                      placeholder=""
-                      class="input-description"
-                  />
+                <textarea class="description__textarea" name="descripcion" 
+                cols="20" rows="10" placeholder="Descripcion del producto" ></textarea>
               </li>
               <li class="button__formulario">
                 <button class="ad-product__button">Agregar Producto
                 </button>
-                <button class="cancel-product__button" onclick="document.getElementById('id02').style.display='none'">Cancelar
+                <button class="cancel-product__button" type="reset" onclick="document.getElementById('id02').style.display='none'">Cancelar
                 </button>
               </li>
             </ul>
-          </section>
+          </form>
           <ul class="listaProductos">
             <li class="imgProducto">
               <img src="assets/images/starwars1.png" alt="Starwars1">

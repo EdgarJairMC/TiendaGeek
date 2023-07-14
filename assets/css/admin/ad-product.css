@@ -7,6 +7,15 @@
     left: 0;
     z-index: 9999;
 }
+.formulario-ad-product{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    margin: auto;
+    width: 328px;
+}
 .modal-product__container{
     margin: auto;
     display: flex;
@@ -18,4 +27,80 @@
     color: var(--preto-100, #464646);
     font-size: 22px;
     font-weight: 700;
+}
+.ad-product-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 7px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: var(--preto-branco, #FFF);
+    padding: 8px;
+}
+.ad-product-group input{
+    border: none;
+}
+.ad-product-group label{
+    color: var(--preto-50, #A2A2A2);
+    font-size: 12px;
+    font-weight: 400;
+}
+.ad-product-group input::placeholder{
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+}
+.ad-product-group:nth-last-child(2){
+    height: 82px;
+}
+.button__formulario{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.ad-product__button, .cancel-product__button{
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: var(--azul-100, #2A7AE4);
+    color: var(--preto-branco, #FFF);
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: none;
+}
+.cancel-product__button{
+    background-color:#a8a9aa;
+}
+.description__textarea{
+    border: none;
+    resize: none;
+}
+.description__textarea::placeholder{
+    color: var(--preto-50, #A2A2A2);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@media screen and (min-width:360px) {
+    
+    .formulario-ad-product{
+        width: 100%;
+        padding-right: 32px;
+        padding-left: 32px;
+        max-width: 768px;
+    }
+    .ad-product__button, .cancel-product__button{
+        width: 30%;
+        height: 51px;
+    }
+    .button__formulario{
+        justify-content: space-around;
+    }
 }
